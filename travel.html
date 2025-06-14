@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Figma2landing</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+        
+        <style type="text/tailwindcss">
+            @theme{
+                --color-signup1:#083F9B;
+                --color-signup2:#7F56D9;
+                --color-signup3:#3023B2;               
+                --color-background1:#4A16BD;
+                --color-background2:#04016C;
+                --color-back1:#2E08C7;
+                --color-back2:#7E08C7;
+                --color-back3:#739FE8;
+                --color-back4:#4F18CA;
+                --color-primary:#0E38CD;
+                --color-primary2:#4883FF;
+                --color-shades1:#E441FF;
+                --color-shades2:#1901F8;
+                --color-shades3:#00B3FF;
+                --color-fade:#81C7A2;
+                --color-boo:#F0F3FF;
+                --color-boo1:#D9ECFF;
+                --color-bo:#6875DF;
+                --color-crl:#3E96EE;
+
+                --font-primary:"Righteous", sans-serif;
+                --font-secondary:"Saira", sans-serif;
+                --font-Special:"Rowdies", sans-serif;
+
+                
+            }
+
+            @layer base{
+                .text-h1{
+                    @apply text-[80px]/[90px] font-primary font-normal;
+                }
+                .text-h2{
+                    @apply text-[45px]/[55px] font-primary font-normal;
+                }
+
+                
+
+                
+                
+                
+
+                
+            }
+
+            @layer components{
+                
+
+
+            }
+           
+        </style>
+    </head>
+    <body class="font-primary">
+        <header class="flex flex-col items-center justify-between p-2 pl-15 pr-20 lg:flex-row 2xl:justify-center 2xl:gap-100">
+            <div>
+                <img src="./Images&logo/Askmeidentity 2.png" alt="logo" class="w-auto h-15 sm:h-20">
+
+            </div>
+            <div class="flex flex-col items-center gap-3 lg:flex lg:flex-row lg:gap-20 lg:items-center">
+                <nav class="flex space-x-4 text-base font-normal sm:space-x-8 sm:ml-2">
+                    <a href="#" class="hover:text-xl">Home</a>
+                    <a href="#" class="hover:text-xl">About</a>
+                    <a href="#" class="hover:text-xl">Courses</a>
+                    <a href="#" class="hover:text-xl">Contact</a>
+                </nav>
+                <div class="hidden lg:block lg:flex gap-5 relative">
+                    <img src="./Images&logo/Icon (2).png" alt="logo" class="w-5 h-[20px] hover:w-6 hover:h-[25px]">
+                    <img src="./Images&logo/span.widget_cart_counter_number.png" alt="logo" class="w-4 h-4 absolute left-3 translate-y-[-7px]">
+                    <img src="./Images&logo/Icon (1).png" alt="logo" class="w-5 h-[20px] hover:w-6 hover:h-[25px]">
+                    <img src="./Images&logo/Icon.png" alt="logo" class="w-5 h-[20px] hover:w-6 hover:h-[25px]">
+                </div>
+                <div class="">
+                    <button class="w-15 h-9 text-sm sm:w-15 sm:h-11 pr-6 text-[#4A4A4A] font-secondary sm:text-base font-medium underline hover:text-xl" >Login</button>
+                    <button class="w-15 h-9 text-sm sm:w-25 sm:h-11 bg-linear-[-65deg] from-signup2 to-signup1 text-white font-secondary rounded-[10px] sm:text-base font-medium hover:scale-125 hover:relative hover:right-[-2px] transition hover:ease-in">Signup</button>
+                </div>
+            </div>
+        </header>
+        <section class="relative">
+          <div class="bg-[url('./Images&logo/back.png')] bg-no-repeat bg-center bg-cover w-full text-white "><div class=" bg-linear-[64deg] from-background1 to-background2 opacity-80 w-screen h-100 md:h-170 lg:h-160 "></div></div>
+          <div class="text-white flex pl-23 pr-20 justify-center md:justify-between md:items-center 2xl:justify-center 2xl:gap-10 absolute top-0 w-full mx-auto h-160">
+            <div class="flex flex-col gap-8 xl:gap-12 md:w-1/2 md:pt-20">
+                <p class="font-primary text-[10px] sm:text-[15px] 2xl:text-[17px] tracking-[3px] translate-y-7">SUCCESSFUL COACHES ARE VISIONARIES</p>
+                <h1 class="font-primary text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl">Good <span class="text-primary">coaching</span> is <br>good teaching & <br> nothing else.</h1>
+                <div>
+                    <button class="text-md py-1 px-5 sm:py-2 sm:px-7 2xl:text-lg border rounded-[5px] hover:shadow-xl">View courses</button>
+                    <button class="hidden lg:inline text-md py-2 px-7 2xl:text-lg rounded-[5px] hover:border hover:shadow-xl">Get free consultation</button>
+                </div>
+                <div class="flex gap-9 items-center w-[80%] py-2 px-2 bg-white rounded-[5px] 2xl:w-[50%] justify-end xl:justify-between translate-y-[-25px] sm:translate-y-[25px] hover:shadow-xl/30">
+                    
+                    <p class="hidden lg:block text-[14px] 2xl:text-[16px] pl-6 text-black">What do you want to lear today?</p>
+                    <button class="text-[13px] px-6 2xl:text-[15px] py-1 xl:py-3 2xl:px-8 bg-linear-[-72deg] from-signup2 to-signup3 flex gap-2 text-white rounded-[5px]  hover:scale-125 transition hover:ease-in hover:relative hover:left-[-10px]">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.4276 17.2033L14.0943 14.8033C14.9831 13.7366 15.5387 12.5366 15.7609 11.2033C15.9831 9.86994 15.872 8.55883 15.4276 7.26994C14.9831 5.98105 14.2498 4.86994 13.2276 3.9366C12.2054 3.00327 11.0276 2.39216 9.69425 2.10327C8.36092 1.81438 7.0387 1.84772 5.72759 2.20327C4.41648 2.55883 3.27203 3.22549 2.29425 4.20327C1.31648 5.18105 0.649808 6.32549 0.294253 7.6366C-0.0613027 8.94772 -0.094636 10.2699 0.194253 11.6033C0.483142 12.9366 1.09425 14.1144 2.02759 15.1366C2.96092 16.1588 4.07203 16.8922 5.36092 17.3366C6.64981 17.781 7.96092 17.8922 9.29425 17.6699C10.6276 17.4477 11.8276 16.8922 12.8943 16.0033L15.2943 18.3366C15.4276 18.5144 15.6165 18.6033 15.8609 18.6033C16.1054 18.6033 16.3054 18.5255 16.4609 18.3699C16.6165 18.2144 16.6943 18.0144 16.6943 17.7699C16.6943 17.5255 16.6054 17.3366 16.4276 17.2033ZM1.69425 9.86994C1.69425 8.71438 1.97203 7.65883 2.52759 6.70327C3.08314 5.74771 3.8387 4.99216 4.79425 4.4366C5.74981 3.88105 6.79425 3.60327 7.92759 3.60327C9.06092 3.60327 10.1054 3.88105 11.0609 4.4366C12.0165 4.99216 12.7831 5.74771 13.3609 6.70327C13.9387 7.65883 14.2276 8.70327 14.2276 9.8366C14.2276 10.9699 13.9387 12.0144 13.3609 12.9699C12.7831 13.9255 12.0165 14.681 11.0609 15.2366C10.1054 15.7922 9.06092 16.0699 7.92759 16.0699C6.79425 16.0699 5.74981 15.7922 4.79425 15.2366C3.8387 14.681 3.08314 13.9255 2.52759 12.9699C1.97203 12.0144 1.69425 10.981 1.69425 9.86994Z" fill="white"/>
+                        </svg>Search</button>
+                </div>
+                <div class="w-50 h-50 border rounded-full absolute  left-[-150px] top-60 bg-fade/30 blur-[18px]">
+
+                </div>
+            </div>
+            <div class="flex relative">
+                <img src="./Images&logo/brunette-woman-hugging-laptop 1.png" alt="image" class="w-full h-auto max-w-sm mx-auto mix-blend-darken opacity-100 z-2 md:w-125 md:h-125 lg:w-full lg:h-auto hidden md:flex">
+                <div class="w-125 h-125 border rounded-full absolute top-[-60px] left-[-20px] top-[120px] bg-white opacity-100 blur-3xl z-1 md:top-[90px] md:w-100 md:left-[25px] lg:left-[-20px] lg:top-[120px] lg:w-125 hidden md:flex">
+
+                </div>
+            </div>
+            <div class="absolute flex gap-2 left-150 top-40 items-center hidden xl:flex 2xl:left-250">
+                <img src="./Images&logo/Group 1000014970.png" alt="logo" class="w-auto h-25">
+                <div class="">
+                    <span class="text-special text-sm">Shyam</span>
+                    <p class="font-primary text-xs">In a coaching role, you ask the <br>
+                        questions and rely more on your <br>
+                        staff, who become the experts, to <br>
+                        provide the information.
+                    </p>
+                    <span class="text-[9px]">4.9</span>
+                </div>
+            </div>
+            </div>
+    </section>
+        <div class="bg-linear-to-b from-back1 to-back2">
+            <div class="flex justify-around items-center bg-linear-to-b from-back1 to-back2 h-28 max-w-screen-xl px-20 mx-auto opacity-90">
+            <img src="./Images&logo/Link ⏵ brand6.png.png" alt="logo" class="h-5 md:h-7 hover:h-6 hover:md:h-8">
+            <img src="./Images&logo/Link ⏵ brand1.png.png" alt="logo" class="h-5 md:h-7 hover:h-6 hover:md:h-8">
+            <img src="./Images&logo/Link ⏵ brand6.png.png" alt="logo" class="h-7 hidden md:flex hover:md:h-8">
+            <img src="./Images&logo/Link ⏵ brand3.png.png" alt="logo" class="h-6 md:h-8 hover:h-7 hover:md:h-9">
+            <img src="./Images&logo/Link ⏵ brand5.png.png" alt="logo" class="h-5 md:h-7 hover:h-6 hover:md:h-8">
+            <img src="./Images&logo/Link ⏵ brand1.png.png" alt="logo" class="h-7 hidden md:flex hover:md:h-6 ">
+            </div>
+        </div>
+        <section class="bg-linear-to-b from-boo to-boo1 py-20 px-20"> 
+            <div class="flex flex-col gap-3 justify-center items-center pb-30">
+                <span class="font-Special text-3xl">Featured <span class="text-primary2">Course</span></span>
+                <p class="font-primary tracking-[3px]">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
+
+            </div>
+            <div class="flex gap-6 justify-center flex-wrap">
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (1).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>1,957 Students</p>
+                        <p>01h 59m</p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>Motion Graphics: Create a Nice <br>Typography Animation</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (6).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>9,575 Students</p>
+                        <p>01h 59m</p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>Advance PHP knowledge with JS to <br>make smart web</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (2).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>2957 Students</p>
+                        <p>02h 49m  </p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>Education Software and PHP and JS <br>System Script</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (3).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>5,457 Students</p>
+                        <p>01h 49m</p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>The Complete Financial Analyst <br>Training & Investing</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (4).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>595 Students</p>
+                        <p>01h 49m</p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>Marketing 2023: Complete Guide To<br>Instagram Growth</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+                <div class="w-80 h-auto bg-white rounded-[10px] hover:shadow-xl ">
+                    <img src="./Images&logo/Mask group (5).png" alt="image">
+                    <div class="font-secondary text-xs flex justify-between py-5 px-4">
+                        <p>458 Students</p>
+                        <p>03h 00m</p>
+                    </div>
+                    <div  class="font-secondary font-semibold px-4 py-2 text-lg"><span>Learn 3D Modelling and Design <br>for Beginners</span></div>
+                    <div class="flex justify-between pt-7 pb-3 px-4">
+                        <p class="font-secondary font-semibold">Rs.499</p>
+                        <p><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.7501 4.33336H2.16675V6.50003H4.65841L8.21175 16.25C8.43525 16.8822 8.84882 17.4298 9.39576 17.8177C9.9427 18.2056 10.5962 18.4148 11.2667 18.4167H20.5834V16.25H11.2667C11.0441 16.2499 10.8269 16.1812 10.6447 16.0533C10.4625 15.9254 10.3241 15.7444 10.2484 15.535L9.75008 14.0834H19.8034C20.2736 14.0827 20.7308 13.9291 21.106 13.6457C21.4813 13.3623 21.7541 12.9646 21.8834 12.5125L23.8334 5.7092C23.8774 5.56694 23.8917 5.41712 23.8752 5.26912C23.8588 5.12111 23.812 4.97809 23.7378 4.84898C23.6635 4.71987 23.5635 4.60744 23.4439 4.51873C23.3243 4.43001 23.1877 4.36691 23.0426 4.33336C22.9457 4.31759 22.8469 4.31759 22.7501 4.33336ZM19.7709 11.9167H8.93758L6.96591 6.50003H21.3092L19.7709 11.9167Z" fill="#5E6775"/>
+<path d="M11.375 22.75C12.2725 22.75 13 22.0225 13 21.125C13 20.2275 12.2725 19.5 11.375 19.5C10.4775 19.5 9.75 20.2275 9.75 21.125C9.75 22.0225 10.4775 22.75 11.375 22.75Z" fill="#5E6775"/>
+<path d="M17.875 22.75C18.7725 22.75 19.5 22.0225 19.5 21.125C19.5 20.2275 18.7725 19.5 17.875 19.5C16.9775 19.5 16.25 20.2275 16.25 21.125C16.25 22.0225 16.9775 22.75 17.875 22.75Z" fill="#5E6775"/>
+                           </svg>
+                        </p>
+                    </div>
+                </div>
+
+            </div>           
+            <div class="pt-15 text-white font-primary text-center">
+                <button class="py-3 px-5 border rounded-[10px] bg-linear-[-73deg] from-signup2 to-signup1 hover:scale-125 transition hover:ease-in">Explore courses</button>
+            </div>
+        </section>
+        <Section class="relative">
+            <div class="bg-[url('./Images&logo/bcc.png')] bg-no-repeat bg-cover"><div class="bg-linear-[-131deg] from-back4 from-10%  via-bo to-back3 to-70% opacity-90 w-full h-166"></div></div>
+            <div class="w-50 h-50 rounded-full border border-white absolute top-55 left-[-90px] bg-crl blur-3xl"></div>
+            <svg class="absolute top-9 w-30" width="208" height="313" viewBox="0 0 208 313" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path opacity="0.2" d="M206.5 156.5C206.5 242.104 137.104 311.5 51.4999 311.5L-149.5 311.5L-149.5 1.49992L51.5 1.49997C137.104 1.49998 206.5 70.8959 206.5 156.5Z" stroke="white" stroke-width="3"/>
+            </svg>
+
+            <svg class="absolute top-20 w-25 " width="167" height="225" viewBox="0 0 167 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path opacity="0.2" d="M165.5 112.5C165.5 173.804 115.804 223.5 54.5 223.5L-149.5 223.5L-149.5 1.49993L54.5 1.49998C115.804 1.49999 165.5 51.1964 165.5 112.5Z" stroke="white" stroke-width="3"/>
+            </svg>
+            <div class="text-white px-20 sm:px-40 py-20 absolute top-0">
+                <div class="text-center space-y-5">
+                 <h2 class="font-primary text-[30px] md:text-[40px]">Why <span class="text-primary">learn</span> with our courses?</h2>
+                 <p class="font-secondary text-base md:text-lg">We are providing the best courses and top classes.And <br> extradinery placement training.....</p>
+
+                </div>
+            <div class="flex flex-col sm:flex-row lg:divide-x-2 lg:divide-dashed justify-center items-center lg:justify-around gap-10 sm:gap-20 pt-20 md:pt-25">
+                <div class=" flex flex-row sm:flex-col gap-6 items-center text-center lg:pr-20">
+                    <img src="./Images&logo/Icon (4).png" alt="icon" class="w-10 md:w-15 hover:w-11 hover:md:w-16">
+                    <span class="text-sm sm:text-lg md:text-xl">01. Learn</span>
+                    <p class="hidden sm:block text-xs md:text-sm">Learn continually. There is always <br>“one more thing”to learn.</p>
+                </div>
+                <div class=" flex flex-row sm:flex-col gap-6 items-center text-center lg:pr-20">
+                    <img src="./Images&logo/Icon (5).png" alt="icon" class="w-10 md:w-15 hover:w-11 hover:md:w-16">
+                    <span class="text-sm text-lg md:text-xl">02. Graduate</span>
+                    <p class="hidden sm:block text-xs md:text-sm">Be bold,be courageous,<br>be your best.</p>
+                </div>
+                <div class=" flex flex-row sm:flex-col gap-6 items-center text-center lg:pr-20 ">
+                    <img src="./Images&logo/Icon (3).png" alt="icon" class="w-10 md:w-15 hover:w-11 hover:md:w-16">
+                    <span class="text-sm text-lg md:text-xl">03. Work</span>
+                    <p class="hidden sm:block text-xs md:text-sm">Great companies are built in<br>the office,with hard work put <br>in by team.</p>
+                </div>
+            </div>
+        </div>
+        </Section>
+        <section class="p-10 bg-linear-to-b from-white from-0% to-boo1 to-100%">
+            <div class="text-center">
+                <h2 class="font-primary text-[30px] md:text-[40px]">Top <span class="text-primary">Categories</span></h2>
+                <p class="font-primary text-base md:text-xl text-[#4E596B]">100+ unique online course list designs</p>
+
+            </div>
+            <div class="grid grid-cols-2 w-[300px] sm:grid-cols-3 sm:w-[480px] mx-auto lg:w-full lg:flex gap-3 justify-center pt-20 pb-10">
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image.png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">Digtal<br>Marketing</p>
+                    <p class="text-xs text-[#4F547B]">25 Courses</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image (1).png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">Web<br>Development</p>
+                    <p class="text-xs text-[#4F547B]">16 Courses</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image (2).png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">Art &<br>Humanities</p>
+                    <p class="text-xs text-[#4F547B]">76 Courses</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image (3).png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">Personal<br>Development</p>
+                    <p class="text-xs text-[#4F547B]">22 Courses</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image (4).png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">IT and<br>Software</p>
+                    <p class="text-xs text-[#4F547B]">110 Courses</p>
+                </div>
+                <div class="flex flex-col items-center text-center gap-4 sm:gap-7 bg-white rounded-[10px] w-30 sm:w-38 py-5 hover:scale-75 transition hover:ease-out" >
+                    <img src="./Images&logo/div.features-box-image (5).png" alt="logo" class="w-14">
+                    <p class="text-lg text-[#324361]">Graphic<br>Design</p>
+                    <p class="text-xs text-[#4F547B]">85 Courses</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="py-30 flex justify-center items-center ">
+            <div class="bg-linear-54 relative from-shades3/15 from-0% via-shades2/60 via-40% to-shades1/100 to-80% w-3xl mx-auto rounded-[10px] py-10 text-white flex flex-col gap-5 justify-center items-center shadow-md ">
+                <h2 class="text-3xl text-center z-2">Subscribe For Get Update <br>Every New Courses</h2>
+                <p class="text-[10px] opacity-70">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+                <div>
+                    <input type="email" placeholder="enter your email" class="p-3 text-white bg-white/20 rounded-[5px] text-xs pr-24 hover:scale-125 hover:relative hover:left-[-30px]">
+                    <button class="bg-primary p-3 rounded-[5px] text-xs hover:scale-125 hover:relative hover:right-[-10px] transition hover:ease-in">subscribe</button>
+
+                </div> 
+                <img src="./Images&logo/eli 1.png" alt="image" class="absolute w-8 left-8 top-10 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/eli 2.png" alt="image" class="absolute w-8 left-25 top-25 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/eli 3.png" alt="image" class="absolute w-8 left-12 bottom-10 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/eli 4.png" alt="image" class="absolute w-8 right-8 top-10 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/eli 5.png" alt="image" class="absolute w-8 right-25 top-25 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/eli 6.png" alt="image" class="absolute w-8 right-12 bottom-10 opacity-20 sm:opacity-100">
+                <img src="./Images&logo/Polygon 7.png" alt="logo" class="w-11 absolute opacity-25 top-3 left-81 z-1">
+                <img src="./Images&logo/Polygon 7.png" alt="logo" class="w-13 absolute opacity-35 bottom-[-28px] left-5 sm:left-[-28px] ">
+            
+            </div>
+        </section>
+        <section class="pt-10">
+            <div class="relative flex justify-center">
+                
+                <div class="relative"><img src="./Images&logo/Rectangle 8691.png" alt="image" class="w-2xl">
+                 <img src="./Images&logo/banner_right.png.png" alt="image" class="hidden md:block w-40 absolute bottom-[-10px] right-[-60px]">
+                </div>
+                <button class="absolute top-30 transform hover:scale-125 transition ease-out">     
+                  <img src="./Images&logo/Group 512857.png" alt="image" class="w-15 sm:w-25">
+                </button>
+                
+            </div>
+        </section>
+        <section  class="p-26 pb-40 bg-linear-to-t from-[#DBEDFF] from-0% to-[#DBEDFF]/0 to-100%">
+            <div class="flex flex-col items-center">
+                <h3 class="text-primary text-4xl text-center mb-5">Testimonials</h3>
+                <p class="text-lg text-[#4E596B] text-center">What our student say about us</p>
+            </div>
+            <div class="pt-35 relative flex justify-center">
+                <div class="p-7 md:pl-13 w-sm md:w-lg relative mx-auto flex flex-col bg-white rounded-[3px] shadow-xl z-3 hover:rounded-[30px] hover:shadow-2xl">
+                    <img src="./Images&logo/th (1) 4.png" alt="image" class="w-10 absolute top-[-26px] left-10 md:left-60 ">
+                    <p class="text-[#7E7EAA] text-sm">Such an amazing traniner and easily understand the entire <br>syllabus, and the guidence will be super and good to the way <br> of explaning.</p>
+                    <img src="./Images&logo/Group 1000014987.png" alt="image" class="w-25 pt-5">
+                </div>
+                <div class="p-7 pl-13 w-lg  mx-auto flex flex-col bg-white rounded-[3px] shadow-xl absolute top-45 left-[-50px] z-2 hidden sm:block blur lg:blur-none hover:scale-75 transition hover:ease-out">
+                    <img src="./Images&logo/th (1) 4.png" alt="image" class="w-10 absolute top-[-26px] left-60">
+                    <p class="text-[#7E7EAA] text-sm">Such an amazing traniner and easily understand the entire <br>syllabus, and the guidence will be super and good to the way <br> of explaning.</p>
+                    <img src="./Images&logo/Group 1000014987.png" alt="image" class="w-25 pt-5">
+                </div>
+                <div class="p-7 pl-13 w-lg  mx-auto flex flex-col bg-white rounded-[3px] shadow-xl absolute top-45 right-[-50px] z-2 hidden sm:block blur lg:blur-none hover:scale-75 transition hover:ease-out">
+                    <img src="./Images&logo/th (1) 4.png" alt="image" class="w-10 absolute top-[-26px] left-60">
+                    <p class="text-[#7E7EAA] text-sm">Such an amazing traniner and easily understand the entire <br>syllabus, and the guidence will be super and good to the way <br> of explaning.</p>
+                    <img src="./Images&logo/Group 1000014987.png" alt="image" class="w-25 pt-5">
+                </div>
+                <div class="w-80 h-80 rounded-full border absolute left-[-250px] top-18 bg-[#8057D8]/15 blur-3xl"></div>
+                <div><img src="./Images&logo/Ellipse 1217.png" alt="image" class="w-15 absolute top-[-80px] left-1 hidden md:block blur lg:blur-none"></div>
+                <div class="hidden md:block"><button class="w-7 absolute bottom-[-140px]"><img src="./Images&logo/Back Arrow.png" alt="image"></button><button class="w-7 absolute bottom-[-140px] right-[-60px]"><img src="./Images&logo/Back Arrow (1).png" alt="image"></button></div>
+            </div>
+        </section>
+        <footer class="flex justify-around p-10 bg-linear-74 from-[#931BBD] to-[#477AE3]">
+            <div class="flex flex-col items-center gap-2 mr-5 md:mr-20">
+                <h3 class="relative left-[-10px]">Connect</h3>
+                <img src="./Images&logo/Askmeidentity 1.png" alt="logo" class="w-35 2xl:w-50 relative left-[-10px] mix-blend-color-burn">
+                <p class="text-[10px]">Sri Jagannath Nivas,8-1-164/345/A/1, <br> Pragati Colony, Mailardevpally, Nawab <br>Saheb Kunta, Hyd, 500005</p>
+            </div>
+            <div>
+                <h3 class="text-lg xl:text-2xl">Classes</h3>
+                <ul class="text-xs/7 xl:text-base/7 decoration-none">
+                <li><a href="#">Classroom courses</a></li>
+                <li><a href="#">Virtual classroom courses</a></li>
+                <li><a href="#">E-learning courses</a></li>
+                <li><a href="#">Video Courses</a></li>
+                <li><a href="#">Offline Courses</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg xl:text-2xl">Community</h3>
+                <ul class="text-xs/7 xl:text-base/7 decoration-none">
+                <li><a href="#">Learners</a></li>
+                <li><a href="#">Parteners</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Blog</a></li>
+                </ul>
+
+            </div>
+            <div>
+                <h3 class="text-lg xl:text-2xl">Quick links</h3>
+                <ul class="text-xs/7 xl:text-base/7 decoration-none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Professional Education</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Programs</a></li>
+                </ul>
+
+            </div>
+            <div>
+                <h3 class="text-lg xl:text-2xl">More</h3>
+                <ul class="text-xs/7 xl:text-base/7 decoration-none">
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
+
+        </footer>
+        <footer class="bg-linear-to-t from-[#A542C8]/95 from-0% to-[#0351AE]/90 p-3 ">
+            <div class="flex gap-3 justify-center">
+                <img src="./Images&logo/Instagram.png" alt="logo" class="p-1 bg-white rounded-full w-8">
+                <img src="./Images&logo/WhatsApp.png" alt="logo" class="p-1 bg-white rounded-full w-8">
+                <img src="./Images&logo/Twitter.png" alt="logo" class="p-1 bg-white rounded-full w-8">
+                <img src="./Images&logo/LinkedIn.png" alt="logo" class="p-1 bg-white rounded-full w-8">
+                <img src="./Images&logo/YouTube.png" alt="logo" class="p-1 bg-white rounded-full w-8">
+            </div>
+        </footer>
+
+
+
+        
+    </body>
+</html>
